@@ -20,6 +20,7 @@
     "stylelint-scss": "2.1.0"
   },
   "scripts": {
-    "prepublish": "gulp"
+    "build": "gulp",
+    "prepublish": "npm run build"
   }
 }
