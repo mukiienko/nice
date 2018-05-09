@@ -49,6 +49,15 @@ gulp.task('docs', function(){
 });
 gulp.task('default', ['fonts', 'lint', 'compile', 'compile-min']);
 
+gulp.task('build-storybook', ['default'], function(){
+    return gulp.src([
+        './index.html',
+        '*docs/**/*.{js,css,jpg,png}',
+        '*assets/**/*.{png,jpg,svg,gif,ico,json,xml}',
+        '*dist/**/*.*',
+    ]).pipe(gulp.dest('./storybook-static/'));
+});
+
 gulp.task('watch', function(){
     gulp.watch('./src/**/*.scss', ['default']);
 });

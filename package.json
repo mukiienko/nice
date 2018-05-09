@@ -21,6 +21,7 @@
   },
   "scripts": {
     "build": "gulp",
+    "build-storybook": "gulp build-storybook",
     "prepublish": "npm run build"
   }
 }
