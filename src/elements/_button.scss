@@ -23,10 +23,12 @@
         border: 1px solid darken($color-border, 15%);
         background-color: $gray-vlight;
     }
-    &:focus {
+    &:focus,
+    .nice-btn-focus {
         border: 1px solid $color-brand;
     }
-    &:active {
+    &:active,
+    .nice-btn-active {
         background-color: $gray-light;
         @include nice-box-shadow(inset 0 2px 1px rgba($gray-medium, 1));
     }
@@ -81,10 +83,12 @@
             padding: 6px 11px;
 
             &:hover,
-            &:focus {
+            &:focus,
+            .nice-btn-focus {
                 background-color: lighten(map-get($color-scheme, #{$type}), 5%);
             }
-            &:active {
+            &:active,
+            .nice-btn-active {
                 @include nice-box-shadow(inset 0 2px 1px darken(map-get($color-scheme, #{$type}), 5%));
             }
             &[disabled],
