@@ -1,5 +1,11 @@
 # Nice! version log
 
+## 2.0.1
+:date: 2018-05-23
+
+### :star2: New features
+- Added support for input field in dropdowns (e.g. for filtering the dropdown)
+
 ## 2.0.0
 :date: 2017-12-21
 
