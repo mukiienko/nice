@@ -138,6 +138,38 @@
                     }
                 }
             }
+            &.input {
+                .nice-form-control {
+                    margin: -1px -1px 0 -1px;
+                    width: calc(100% + 2px);
+                    padding: 8px 10px;
+                    border-bottom-style: double;
+                    @include nice-border-radius($radius-normal $radius-normal 0 0);
+
+                    &:focus {
+                        &.icon {
+                            &:before {
+                                color: $color-brand;
+                            }
+                        }
+                    }
+                }
+                &.icon {
+                    position: relative;
+
+                    .nice-form-control {
+                        padding-left: 30px;
+                    }
+
+                    &:before {
+                        position: absolute;
+                        left: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #CCC;
+                    }
+                }
+            }
             &.description {
                 span {
                     background-color: $color-white;
