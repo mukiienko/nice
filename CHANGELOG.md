@@ -1,5 +1,9 @@
 # Nice! version log
 
+## 2.0.2
+:date: 2018-09-13
+- Minor fix to tabs component, preventing all list items inside tabs to receive display none
+
 ## 2.0.1
 :date: 2018-05-23
 
