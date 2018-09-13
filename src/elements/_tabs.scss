@@ -5,7 +5,7 @@
     border-bottom: 1px solid $color-border;
     @extend %clearfix;
 
-    li {
+    > li {
         margin-bottom: -1px;
         position: relative;
         float: left;
@@ -179,7 +179,7 @@
     background-color: $color-white;
     list-style: none;
 
-    li {
+    > li {
         display: none;
 
         &.current {
@@ -201,7 +201,7 @@
 
 @include media($mobile-and-tablet) {
     .nice-tabs {
-        li {
+        > li {
             a {
                 &.icon {
                     min-width: 80px;
@@ -229,7 +229,7 @@
             }
         }
         &.small {
-            li {
+            > li {
                 a {
                     &.icon {
                         min-width: 60px;
